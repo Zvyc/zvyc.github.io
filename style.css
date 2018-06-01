@@ -1,3 +1,94 @@
-body {
-	background-color: green;
+#container {
+	margin: auto;
+}
+
+.square {
+	width: 0.40%;
+	padding-bottom: 0.40%;
+	margin: auto;
+	float: left;
+}
+
+html, body {
+	background-color: #FFFFFE;
+	overflow: hidden;
+	height: 100%;
+	margin: auto;
+	min-width: 2000px;
+	min-height: 2000px;
+}
+
+.colorPickSquare {
+	width: 5%;
+	padding-bottom: 5%;
+	background-color: blue;
+	float: left;
+	margin: 1% 1.25%;
+	border-radius: 50px;
+}
+
+.colorPicker {
+	width: 100%;
+	height: 7.3%;
+	border-bottom: 4px dashed black;
+}
+
+h1 {
+	display: inline;
+	text-align: center;
+	position: absolute;
+	font-size: 2rem;
+	margin: 5px 5px;
+	font-family: "Concert One", Sans-Serif;
+	user-select: none;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.switch {
+	margin: 1.8% 4%;
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	height: 68px;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 52px;
+	width: 52px;
+	left: 8px;
+	bottom: 8px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #2196F3;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 2px #2196F3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(52px);
+	-ms-transform: translateX(52px);
+	transform: translateX(52px);
 }
