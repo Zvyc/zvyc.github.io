@@ -11,11 +11,13 @@ var colors = [
 	'green',
 	'blue',
 	'purple',
-	'black'
+	'black',
+	'white'
 ];
 
 for(var i = 0; i < colorPickSquares.length; i++) {
 	colorPickSquares[i].style.backgroundColor = colors[i]
+	colorPickSquares[7].style.border = "2px solid black";
 
 	colorPickSquares[i].addEventListener('click', function() {
 		activeColor = this.style.backgroundColor;
