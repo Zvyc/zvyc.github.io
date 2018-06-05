@@ -14,13 +14,13 @@ html, body {
 	overflow: hidden;
 	height: 100%;
 	margin: auto;
-	min-width: 2000px;
 	min-height: 2000px;
+	min-width: 2000px;
 }
 
 .colorPickSquare {
-	width: 5%;
-	padding-bottom: 5%;
+	width: 100px;
+	padding-bottom: 100px;
 	background-color: blue;
 	float: left;
 	margin: 1% 1.25%;
@@ -29,7 +29,7 @@ html, body {
 
 .colorPicker {
 	width: 100%;
-	height: 7.3%;
+	height: 140px;
 	border-bottom: 4px dashed black;
 }
 
