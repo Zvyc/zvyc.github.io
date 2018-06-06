@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Site</title>
+	<title>CSS Grid</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="colorPicker">
-		<div class="colorPickSquare"></div>
-		<div class="colorPickSquare"></div>
-		<div class="colorPickSquare"></div>
-		<div class="colorPickSquare"></div>
-		<div class="colorPickSquare"></div>
-		<div class="colorPickSquare"></div>
-		<div class="colorPickSquare"></div>
-		<div class="colorPickSquare"></div>
+	<div id="upperContent">
+		<div>
+			<div class="colPick"></div>
+		</div>
+		<div>
+			<div class="colPick"></div>
+		</div>
+		<div>
+			<div class="colPick"></div>
+		</div>
+		<div>
+			<div class="colPick"></div>
+		</div>
+		<div>
+			<div class="colPick"></div>
+		</div>
+		<div>
+			<div class="colPick"></div>
+		</div>
+		<div>
+			<div class="colPick"></div>
+		</div>
+		<div>
+			<div class="colPick" id="whiteColPick"></div>
+		</div>
 
-		<label class="switch">
-			<input type="checkbox" id="cbox" onclick="cBox()">
-			<span class="slider"></span>
-		</label>
-
+		<div class="center">
+			<h1 class="unselectable">@zvyycc</h1>	
+		</div>
 	</div>
 
-	<br>
-
-	<div id="container">
+	<div id="lowerContent">
 		
 	</div>
-
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
