@@ -1,8 +1,9 @@
-var container = document.querySelector('#container');
-var colorPickSquares = document.querySelectorAll('.colorPickSquare');
-var checkbox = document.querySelector('input');
-var createSquare;
+var upperContent = document.querySelector('#upperContent');
+var colPick = document.querySelectorAll('.colPick');
 var activeColor = 'black';
+
+var lowerContent = document.querySelector('#lowerContent');
+
 
 var colors = [
 	'red',
@@ -15,41 +16,38 @@ var colors = [
 	'white'
 ];
 
-for(var i = 0; i < colorPickSquares.length; i++) {
-	colorPickSquares[i].style.backgroundColor = colors[i]
-	colorPickSquares[7].style.border = "2px solid black";
+upperContentInit();
+lowerContentInit();
 
-	colorPickSquares[i].addEventListener('click', function() {
-		activeColor = this.style.backgroundColor;
-	});
-}
+function upperContentInit() {
+	for(var i = 0; i < colPick.length; i++) {
+		colPick[i].style.backgroundColor = colors[i]
 
-for(var i = 0; i < 29000; i++) {
-	var createSquare = document.createElement('DIV');
-	createSquare.setAttribute('class', 'square');
-	createSquare.style.backgroundColor = 'white';
-
-	container.appendChild(createSquare);
-}
-
-var squares = document.querySelectorAll('.square');
-
-for(var i = 0; i < squares.length; i++) {
-	squares[i].addEventListener('mouseover', function(evt) {
-		if(evt.buttons == 1) {
-			this.style.backgroundColor = activeColor;
-		}
-	});
-	squares[i].addEventListener('click', function(evt) {
-		this.style.backgroundColor = activeColor;
-	});
-}
-
-checkbox.addEventListener('click', function() {
-	if(checkbox.checked == true) {
-		for(var i = 0; i < squares.length; i++) {
-			squares[i].style.backgroundColor = activeColor;
-		}
+		colPick[i].addEventListener('click', function() {
+			activeColor = this.style.backgroundColor;
+		});
 	}
-});
-	
+}
+
+function lowerContentInit() {
+	for(var i = 0; i < 29000; i++) {
+		var createSquare = document.createElement('DIV');
+		createSquare.setAttribute('class', 'square');
+		createSquare.style.backgroundColor = 'white';
+
+		lowerContent.appendChild(createSquare);
+	}
+
+	var squares = document.querySelectorAll('.square');
+
+	for(var i = 0; i < squares.length; i++) {
+		squares[i].addEventListener('mouseover', function(evt) {
+			if(evt.buttons == 1) {
+				this.style.backgroundColor = activeColor;
+			}
+		});
+		squares[i].addEventListener('click', function(evt) {
+			this.style.backgroundColor = activeColor;
+		});
+	}
+}
