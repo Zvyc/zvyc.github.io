@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     margin: auto;
     background-color: white;
+    user-select: none;
 }
 
 h1 {
@@ -98,4 +99,8 @@ h2 {
     font-weight: 600;
     font-size: 1rem;
     text-align: left;
+}
+
+.btn:hover {
+	background-color: #C0C0C0;
 }
