@@ -9,7 +9,6 @@ html, body {
     margin: auto;
     background-color: white;
     user-select: none;
-    overflow: show;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -40,12 +39,11 @@ h3 {
 #content-bg {
 	background-color: #81D1EE;
 	width: 50%;
-	height: 100%;
+	min-height: 100%;
 	max-width: 800px;
 	border-right: 30px solid #333;
 
 	display: block;
-	overflow: show;
     float: left;
 }
 
