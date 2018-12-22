@@ -1,0 +1,163 @@
+body, html {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+	min-width: 619px;
+}
+
+h1, h2{
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+	font-size: 2.75rem;
+}
+
+div {
+	font-size: 1.5rem;
+}
+
+#home-page {
+	background-color: blue;
+	margin: auto;
+	background: no-repeat url("../images/home-page-banner.jpeg");
+	background-size: cover;
+	background-position: 0px -250px;
+	min-width: 543px;
+	display: block;
+}
+
+#home-page h1 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 50px;
+	font-size: 7rem;
+	text-decoration: underline;
+	text-decoration-color: red;
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+    margin-bottom: 0px;
+}
+
+#side-grid {
+	grid-column-start: 1;
+	grid-column-end: 1;
+
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+
+#main-grid {
+	grid-column-start: 2;
+	grid-column-end: 5;
+
+	grid-row-start: 1;
+	grid-row-end: 5;
+}
+
+img {
+    width: 100%;
+    padding: 15px 0;
+}
+
+#grid-container {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 1ch;
+}
+
+#nav {
+	margin-top:	10px;
+	margin-left: 10px;
+	cursor:pointer;
+}
+
+.nextPage a {
+    margin-top: 22px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    float: right;
+    color: purple;
+}
+
+.btn {
+    background: #fff;
+    color: black;
+    border: 2px solid;
+    border-radius: 0;
+    box-shadow: none;
+    display: inline-block;
+    padding: 9px;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: "Open Sans",arial,x-locale-body,sans-serif;
+    text-transform: none;
+    text-align: left;
+    text-decoration: none;
+    text-rendering: auto;
+    line-height: 1;
+    letter-spacing: normal;
+}
+
+.btn:hover {
+	background-color: #C0C0C0;
+}
+
+.btn.menu_links { cursor: pointer; }
+
+.site {
+    margin-left: 20px;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
