@@ -32,7 +32,7 @@ h3 {
 }
 
 #snapcode-div {
-	overflow: hidden;
+	overflow: show;
     text-align: center;
     font-size: 18px;
 }
@@ -45,7 +45,7 @@ h3 {
 	border-right: 30px solid #333;
 
 	display: block;
-	overflow: hidden;
+	overflow: show;
     float: left;
 }
 
