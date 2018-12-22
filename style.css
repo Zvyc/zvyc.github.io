@@ -9,43 +9,56 @@ html, body {
     margin: auto;
     background-color: white;
     user-select: none;
-}
-
-h1 {
-    text-align: center;
-    font-size: 5rem;
+    overflow: show;
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    border-bottom: 4px dashed grey;
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
     text-decoration: underline;
+    margin-top: 0;
+    padding-top: 1%;
+}
+
+h3 {
+    margin: 0;
+}
+
+#snapcode {
+    width: 30%;
+    min-width: 265px;
+    max-width: 300px;
+    margin-top: 5%;
+    margin-bottom: 5px;
+}
+
+#snapcode-div {
+	overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+}
+
+#content-bg {
+	background-color: #81D1EE;
+	width: 50%;
+	height: 100%;
+	max-width: 800px;
+	border-right: 30px solid #333;
+
+	display: block;
+	overflow: hidden;
+    float: left;
+}
+
+#credit {
+    background-color: #80D1EC;
+    display: inline-block;
+    padding: 10px;
+    border: 10px solid #333;
 }
 
 .section {
     margin-bottom: 30px;
     padding-left: 10px;
-}
-
-#main-content {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 9;
-    margin: 0;
-    background-color: #82D1F0;
-}
-
-#alpha-grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-
-    min-width: 500px;
-    width: 100%;
-    min-height: 100%;
 }
 
 .btn {
@@ -74,33 +87,19 @@ h2 {
 
 }
 
-.footer-left {
-    grid-column: 1 / 2;
-    grid-row: 8 / 9;
-    background-color: #222;
-}
-
-.footer-right {
-    grid-column: 5 / 9;
-    grid-row: 8 / 9;
-    background-color: #222;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-}
-
-.credit {
-    grid-column:4 / 6;
-    grid-row: 4 / 6;
-    margin: 0px;
-    padding-right: 10px;
-    color: rgba(255,255,255,0.1);
-    font-family: "Open Sans",arial,x-locale-body,sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    text-align: left;
-}
-
 .btn:hover {
 	background-color: #C0C0C0;
+}
+
+@media only screen and (max-width: 800px) {
+  #content-bg {
+    width: 100%;
+    max-width: none;
+    border-right: none;
+  }
+
+  #snapcode-div {
+    display: none;
+  }
+
 }
