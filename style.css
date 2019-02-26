@@ -101,3 +101,10 @@ h3 {
   }
 
 }
+
+#beta-tester {
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    color: #aaa;
+}
